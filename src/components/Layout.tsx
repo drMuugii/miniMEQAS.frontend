@@ -1,12 +1,17 @@
-import { Box, Container } from "@mui/material";
+import { Box, Container, Stack } from "@mui/material";
 import Header from "./Header";
-import Sidebar2 from "./Sidebar";
+import Sidebar from "./Sidebar";
+import { Outlet } from "react-router-dom";
+import SidebarLIST from "./SidebarLIST";
 
 export default function Layout() {
   return (
     <Box>
       <Header />
-      <Sidebar2 />
+      <Stack direction={"row"}>
+        <SidebarLIST />
+        <Outlet />
+      </Stack>
     </Box>
   );
 }

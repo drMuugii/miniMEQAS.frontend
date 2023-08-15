@@ -13,7 +13,11 @@ export default function Program() {
   return (
     <TableContainer
       component={Paper}
-      sx={{ marginLeft: "15%", width: "85%", maxHeight: "800px" }}
+      sx={{
+        marginTop: "80px",
+        width: "100%",
+        maxHeight: "800px",
+      }}
     >
       <Table aria-label="simple table" stickyHeader>
         <TableHead>
