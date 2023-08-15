@@ -1,17 +1,18 @@
 import {
-  Box,
   Button,
-  ButtonGroup,
-  IconButton,
   Stack,
-  ToggleButton,
+  IconButton,
+  ButtonGroup,
   ToggleButtonGroup,
+  ToggleButton,
 } from "@mui/material";
+import SendIcon from "@mui/icons-material/Send";
+import FormatBoldIcon from "@mui/icons-material/FormatBold";
+import FormatItalicIcon from "@mui/icons-material/FormatItalic";
+import FormatUnderlinedIcon from "@mui/icons-material/FormatUnderlined";
 import { useState } from "react";
 
-import SendIcon from "@mui/icons-material/Send";
-
-export default function AdminDashboard() {
+export default function MuiButton() {
   const [formats, setFormats] = useState<string | null>(null);
 
   console.log(formats);
@@ -104,7 +105,17 @@ export default function AdminDashboard() {
           value={formats}
           onChange={handleFormatChange}
           exclusive
-        ></ToggleButtonGroup>
+        >
+          <ToggleButton value="bold" aria-label="bold">
+            <FormatBoldIcon />
+          </ToggleButton>
+          <ToggleButton value="italic" aria-label="italic">
+            <FormatItalicIcon />
+          </ToggleButton>
+          <ToggleButton value="underlined" aria-label="underlined">
+            <FormatUnderlinedIcon />
+          </ToggleButton>
+        </ToggleButtonGroup>
       </Stack>
     </Stack>
   );
