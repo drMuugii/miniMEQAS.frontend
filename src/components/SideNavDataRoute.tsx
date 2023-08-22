@@ -3,7 +3,7 @@ import Mail from "@mui/icons-material/Mail";
 import EventIcon from "@mui/icons-material/Event";
 import AssignmentIcon from "@mui/icons-material/Assignment";
 
-export const SidebarData = [
+export const SideNavDataRoute = [
   {
     title: "Эхлэл",
     icon: <Home fontSize="large" color="secondary" />,
@@ -12,7 +12,7 @@ export const SidebarData = [
   {
     title: "Хөтөлбөр",
     icon: <AssignmentIcon fontSize="large" color="secondary" />,
-    path: "/Program",
+    path: "/ProgramChoose",
   },
   {
     title: "Хуанли",
@@ -32,6 +32,6 @@ export const SidebarData = [
   {
     title: "Тусламж",
     icon: <Help fontSize="large" color="secondary" />,
-    path: "/SideMenu",
+    path: "/Help",
   },
 ];

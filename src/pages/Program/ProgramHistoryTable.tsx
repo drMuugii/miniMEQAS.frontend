@@ -7,41 +7,41 @@ import {
   TableCell,
   Paper,
 } from "@mui/material";
-import { tableData } from "./ProgramData";
+import { ProgramHistoryData } from "./ProgramHistoryData";
 
-export default function Program() {
+//! Search, filter хийх.
+
+export default function ProgramHistoryTable() {
   return (
     <TableContainer
-      component={Paper}
-      sx={{
-        marginTop: "80px",
-        width: "100%",
-        maxHeight: "800px",
-      }}
+    // component={Paper}
+    // sx={{
+    //   width: "100%",
+    //   maxHeight: "800px",
+    // }}
     >
-      <Table aria-label="simple table" stickyHeader>
+      <Table size="small" aria-label="simple table" stickyHeader>
         <TableHead>
           <TableRow>
-            <TableCell>Дугаар</TableCell>
+            <TableCell>№</TableCell>
             <TableCell>Эхлэх огноо</TableCell>
             <TableCell>Дуусах огноо</TableCell>
             <TableCell>Төрөл</TableCell>
             <TableCell align="center">Нэр</TableCell>
             <TableCell>Төлөв</TableCell>
+            <TableCell align="center">Тайлан татаж авах</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
-          {tableData.map((row) => (
-            <TableRow
-              key={row.id}
-              sx={{ "&:last-child td, &last-child th": { border: 0 } }}
-            >
+          {ProgramHistoryData.map((row) => (
+            <TableRow key={row.id}>
               <TableCell>{row.number}</TableCell>
               <TableCell>{row.startDate}</TableCell>
               <TableCell>{row.endDate}</TableCell>
               <TableCell>{row.EQAcategory}</TableCell>
               <TableCell align="center">{row.EQAname}</TableCell>
               <TableCell>{row.status}</TableCell>
+              <TableCell align="center">{row.reportDownload}</TableCell>
             </TableRow>
           ))}
         </TableBody>

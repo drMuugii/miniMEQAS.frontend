@@ -1,22 +1,9 @@
-import {
-  AppBar,
-  Toolbar,
-  IconButton,
-  Typography,
-  Stack,
-  Button,
-  Menu,
-  MenuItem,
-  Badge,
-  Avatar,
-} from "@mui/material";
+import { Toolbar, Button, Menu, MenuItem, Avatar } from "@mui/material";
 import { useState } from "react";
-import { KeyboardArrowDown } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
+import { KeyboardArrowDown } from "@mui/icons-material";
 
-import LigIn from "../pages/LogIn";
-
-export default function HeaderUser() {
+export default function HeadNavUser() {
   const [anchorEL, setAnchorEL] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEL);
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
