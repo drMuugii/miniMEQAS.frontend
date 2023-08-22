@@ -1,7 +1,7 @@
 import { IconButton } from "@mui/material";
 import FastForwardIcon from "@mui/icons-material/FastForward";
 
-export const ProgramNewData = [
+export const ProgramNewListData = [
   {
     id: 1,
     number: 1,

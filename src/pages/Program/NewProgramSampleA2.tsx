@@ -12,185 +12,172 @@ export default function NewProgramSampleA2() {
           variant="h4"
           paddingBottom={"20px"}
         >
-          СОРЬЦ A - 2 давталт
+          СОРЬЦ A - 2
         </Typography>
       </Grid>
 
-      <Stack
-        justifyContent={"center"}
-        direction={"row"}
-        paddingBottom={2}
-        spacing={1}
-      >
-        <Typography variant="h4" p={"5px"}>
-          WBC:
-        </Typography>
-        <TextField
-          id="wbc1"
-          name="wbc1"
-          variant="outlined"
-          size="small"
-          inputProps={{ style: { fontSize: 25 } }}
-          // font size of input text
-        />
-        <Typography variant="h4" p={"5px"}>
-          x10*3/µL
-        </Typography>
-      </Stack>
+      <Grid container spacing={1}>
+        <Grid item xs={12} sm={4}>
+          <Typography variant="h4" p={"5px"} textAlign={"end"}>
+            WBC:
+          </Typography>
+        </Grid>
+        <Grid item xs={12} sm={3}>
+          <TextField
+            id="wbc1"
+            name="wbc1"
+            variant="outlined"
+            size="small"
+            inputProps={{ style: { fontSize: 25 } }}
+            type="number"
+          />
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <Typography variant="h4" p={"5px"}>
+            x10*6/µL
+          </Typography>
+        </Grid>
 
-      <Stack
-        justifyContent={"center"}
-        direction={"row"}
-        paddingBottom={2}
-        spacing={1}
-      >
-        <Typography variant="h4" p={"5px"}>
-          RBC:
-        </Typography>
-        <TextField
-          id="wbc1"
-          name="wbc1"
-          variant="outlined"
-          size="small"
-          inputProps={{ style: { fontSize: 25 } }}
-          // font size of input text
-        />
-        <Typography variant="h4" p={"5px"}>
-          x10*6/µL
-        </Typography>
-      </Stack>
+        <Grid item xs={12} sm={4}>
+          <Typography variant="h4" p={"5px"} textAlign={"end"}>
+            RBC:
+          </Typography>
+        </Grid>
+        <Grid item xs={12} sm={3}>
+          <TextField
+            id="wbc1"
+            name="wbc1"
+            variant="outlined"
+            size="small"
+            inputProps={{ style: { fontSize: 25 } }}
+          />
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <Typography variant="h4" p={"5px"}>
+            x10*6/µL
+          </Typography>
+        </Grid>
 
-      <Stack
-        justifyContent={"center"}
-        direction={"row"}
-        paddingBottom={2}
-        spacing={1}
-      >
-        <Typography variant="h4" p={"5px"}>
-          HGB:
-        </Typography>
-        <TextField
-          id="wbc1"
-          name="wbc1"
-          variant="outlined"
-          size="small"
-          inputProps={{ style: { fontSize: 25 } }}
-          // font size of input text
-        />
-        <Typography variant="h4" p={"5px"}>
-          g/dL
-        </Typography>
-      </Stack>
+        <Grid item xs={12} sm={4}>
+          <Typography variant="h4" p={"5px"} textAlign={"end"}>
+            HGB:
+          </Typography>
+        </Grid>
+        <Grid item xs={12} sm={3}>
+          <TextField
+            id="wbc1"
+            name="wbc1"
+            variant="outlined"
+            size="small"
+            inputProps={{ style: { fontSize: 25 } }}
+          />
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <Typography variant="h4" p={"5px"}>
+            g/dL
+          </Typography>
+        </Grid>
 
-      <Stack
-        justifyContent={"center"}
-        direction={"row"}
-        paddingBottom={2}
-        spacing={1}
-      >
-        <Typography variant="h4" p={"5px"}>
-          Hct:
-        </Typography>
-        <TextField
-          id="wbc1"
-          name="wbc1"
-          variant="outlined"
-          size="small"
-          inputProps={{ style: { fontSize: 25 } }}
-          // font size of input text
-        />
-        <Typography variant="h4" p={"5px"}>
-          %
-        </Typography>
-      </Stack>
+        <Grid item xs={12} sm={4}>
+          <Typography variant="h4" p={"5px"} textAlign={"end"}>
+            Hct:
+          </Typography>
+        </Grid>
+        <Grid item xs={12} sm={3}>
+          <TextField
+            id="wbc1"
+            name="wbc1"
+            variant="outlined"
+            size="small"
+            inputProps={{ style: { fontSize: 25 } }}
+          />
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <Typography variant="h4" p={"5px"}>
+            %
+          </Typography>
+        </Grid>
 
-      <Stack
-        justifyContent={"center"}
-        direction={"row"}
-        paddingBottom={2}
-        spacing={1}
-      >
-        <Typography variant="h4" p={"5px"}>
-          PLT:
-        </Typography>
-        <TextField
-          id="wbc1"
-          name="wbc1"
-          variant="outlined"
-          size="small"
-          inputProps={{ style: { fontSize: 25 } }}
-          // font size of input text
-        />
-        <Typography variant="h4" p={"5px"}>
-          x10*3/µL
-        </Typography>
-      </Stack>
+        <Grid item xs={12} sm={4}>
+          <Typography variant="h4" p={"5px"} textAlign={"end"}>
+            PLT:
+          </Typography>
+        </Grid>
+        <Grid item xs={12} sm={3}>
+          <TextField
+            id="wbc1"
+            name="wbc1"
+            variant="outlined"
+            size="small"
+            inputProps={{ style: { fontSize: 25 } }}
+          />
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <Typography variant="h4" p={"5px"}>
+            x10*3/µL
+          </Typography>
+        </Grid>
 
-      <Stack
-        justifyContent={"center"}
-        direction={"row"}
-        paddingBottom={2}
-        spacing={1}
-      >
-        <Typography variant="h4" p={"5px"}>
-          MCV:
-        </Typography>
-        <TextField
-          id="wbc1"
-          name="wbc1"
-          variant="outlined"
-          size="small"
-          inputProps={{ style: { fontSize: 25 } }}
-          // font size of input text
-        />
-        <Typography variant="h4" p={"5px"}>
-          fL
-        </Typography>
-      </Stack>
+        <Grid item xs={12} sm={4}>
+          <Typography variant="h4" p={"5px"} textAlign={"end"}>
+            MCV:
+          </Typography>
+        </Grid>
+        <Grid item xs={12} sm={3}>
+          <TextField
+            id="wbc1"
+            name="wbc1"
+            variant="outlined"
+            size="small"
+            inputProps={{ style: { fontSize: 25 } }}
+          />
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <Typography variant="h4" p={"5px"}>
+            fL
+          </Typography>
+        </Grid>
 
-      <Stack
-        justifyContent={"center"}
-        direction={"row"}
-        paddingBottom={2}
-        spacing={1}
-      >
-        <Typography variant="h4" p={"5px"}>
-          MCH:
-        </Typography>
-        <TextField
-          id="wbc1"
-          name="wbc1"
-          variant="outlined"
-          size="small"
-          inputProps={{ style: { fontSize: 25 } }}
-          // font size of input text
-        />
-        <Typography variant="h4" p={"5px"}>
-          pg
-        </Typography>
-      </Stack>
+        <Grid item xs={12} sm={4}>
+          <Typography variant="h4" p={"5px"} textAlign={"end"}>
+            MCH:
+          </Typography>
+        </Grid>
+        <Grid item xs={12} sm={3}>
+          <TextField
+            id="wbc1"
+            name="wbc1"
+            variant="outlined"
+            size="small"
+            inputProps={{ style: { fontSize: 25 } }}
+          />
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <Typography variant="h4" p={"5px"}>
+            pg
+          </Typography>
+        </Grid>
 
-      <Stack
-        justifyContent={"center"}
-        direction={"row"}
-        paddingBottom={2}
-        spacing={1}
-      >
-        <Typography variant="h4" p={"5px"}>
-          MCHC:
-        </Typography>
-        <TextField
-          id="wbc1"
-          name="wbc1"
-          variant="outlined"
-          size="small"
-          inputProps={{ style: { fontSize: 25 } }}
-          // font size of input text
-        />
-        <Typography variant="h4" p={"5px"}>
-          g/dL
-        </Typography>
-      </Stack>
+        <Grid item xs={12} sm={4}>
+          <Typography variant="h4" p={"5px"} textAlign={"end"}>
+            MCHC:
+          </Typography>
+        </Grid>
+        <Grid item xs={12} sm={3}>
+          <TextField
+            id="wbc1"
+            name="wbc1"
+            variant="outlined"
+            size="small"
+            inputProps={{ style: { fontSize: 25 } }}
+          />
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <Typography variant="h4" p={"5px"}>
+            g/dL
+          </Typography>
+        </Grid>
+      </Grid>
     </React.Fragment>
   );
 }

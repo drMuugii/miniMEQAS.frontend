@@ -1,7 +1,6 @@
 import {
   AppBar,
   Box,
-  Stack,
   Toolbar,
   Typography,
   Container,
@@ -12,7 +11,7 @@ import {
   Button,
 } from "@mui/material";
 import { useState } from "react";
-import NewProgramSampleA, { SampleA } from "./NewProgramSampleA";
+import NewProgramSampleA from "./NewProgramSampleA";
 import NewProgramSampleB from "./NewProgramSampleB";
 import React from "react";
 import NewPorgramConfirmation from "./NewPorgramConfirmation";

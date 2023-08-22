@@ -7,19 +7,15 @@ import {
   TableCell,
   Paper,
 } from "@mui/material";
-import { ProgramNewData } from "./ProgramNewData";
+import { ProgramNewListData } from "./ProgramNewListData";
+import { useNavigate } from "react-router-dom";
 
 //! Search, filter хийх.
 
 export default function ProgramNewTable() {
+  const navigate = useNavigate();
   return (
-    <TableContainer
-    // component={Paper}
-    // sx={{
-    //   width: "100%",
-    //   maxHeight: "800px",
-    // }}
-    >
+    <TableContainer>
       <Table size="small" aria-label="simple table" stickyHeader>
         <TableHead>
           <TableRow>
@@ -33,7 +29,7 @@ export default function ProgramNewTable() {
           </TableRow>
         </TableHead>
         <TableBody>
-          {ProgramNewData.map((row: any) => (
+          {ProgramNewListData.map((row: any) => (
             <TableRow key={row.id}>
               <TableCell>{row.number}</TableCell>
               <TableCell>{row.startDate}</TableCell>

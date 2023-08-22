@@ -104,7 +104,6 @@ export default function ProgramChoose() {
                   width: {
                     xs: 100, // дэлгэц 0 px их үед width нь 100px
                     sm: 200, // дэлгэц 600 px их үед width нь 200px
-
                     md: 300, // дэлгэц 900 px их үед width нь 300px
                   },
                 }}
