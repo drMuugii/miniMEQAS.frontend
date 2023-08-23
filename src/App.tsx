@@ -12,13 +12,8 @@ import ProgramChoose from "./pages/Program/ProgramChoose";
 import ProgramNewList from "./pages/Program/ProgramNewList";
 import DownloadSuccess from "./components/ProgramAlert";
 import ProgramCertificate from "./pages/Program/ProgramCertificate";
-import AddressForm from "./components/Checkout.tsx/AddressForm";
-import Checkout from "./components/Checkout.tsx/Checkout";
 import NewProgram from "./pages/Program/NewProgram";
 import NewProgramCheckinfo from "./pages/Program/NewProgramCheckinfo";
-import NewProgramSampleA from "./pages/Program/NewProgramSampleA";
-import MuiAutoComplete from "./MuiTest/MuiAutoComplete";
-import ComposedTextField from "./pages/Program/Teest";
 
 //! Layout ийн зохион байгуулалт хийх. path/ үед бүх хуудсыг харуулдаг болгох
 
@@ -38,13 +33,8 @@ export default function App() {
         <Route path="DownloadSuccess" element={<DownloadSuccess />} />
         <Route path="ProgramCertificate" element={<ProgramCertificate />} />
         <Route path="NewProgram" element={<NewProgram />} />
+        <Route path="NewProgramCheckinfo" element={<NewProgramCheckinfo />} />
       </Route>
-      <Route path="Checkout" element={<Checkout />} />
-
-      <Route path="NewProgramCheckinfo" element={<NewProgramCheckinfo />} />
-      <Route path="NewProgramSampleA" element={<NewProgramSampleA />} />
-      <Route path="MuiAutoComplete" element={<MuiAutoComplete />} />
-      <Route path="ComposedTextField" element={<ComposedTextField />} />
     </Routes>
   );
 }

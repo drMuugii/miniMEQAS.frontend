@@ -5,7 +5,6 @@ import {
   TableBody,
   TableRow,
   TableCell,
-  Paper,
 } from "@mui/material";
 import { ProgramNewListData } from "./ProgramNewListData";
 import { useNavigate } from "react-router-dom";

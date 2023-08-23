@@ -1,4 +1,4 @@
-import { IconButton } from "@mui/material";
+import { Alert, IconButton } from "@mui/material";
 import FastForwardIcon from "@mui/icons-material/FastForward";
 
 export const ProgramNewListData = [
@@ -12,7 +12,7 @@ export const ProgramNewListData = [
       "miniMEQAS Гематологийн чанарын гадаад үнэлгээний 1-дэх удаагийн  хөтөлбөр",
     status: "Нээлттэй",
     participate: (
-      <IconButton onClick={() => alert("NewProgram руу Route хийх")}>
+      <IconButton onClick={() => alert("NewProgramCheckinfo")}>
         <FastForwardIcon />
       </IconButton>
     ),
@@ -27,7 +27,7 @@ export const ProgramNewListData = [
       "miniMEQAS Гематологийн чанарын гадаад үнэлгээний 2-дах удаагийн  хөтөлбөр",
     status: "Хариу илгээсэн",
     participate: (
-      <IconButton onClick={() => alert("NewProgram руу Route хийх")}>
+      <IconButton onClick={() => alert("NewProgramCheckinfo")}>
         <FastForwardIcon />
       </IconButton>
     ),
@@ -42,7 +42,7 @@ export const ProgramNewListData = [
       "miniMEQAS Гематологийн чанарын гадаад үнэлгээний 3-дах удаагийн  хөтөлбөр",
     status: "Нээлттэй",
     participate: (
-      <IconButton onClick={() => alert("NewProgram руу Route хийх")}>
+      <IconButton onClick={() => alert("NewProgramCheckinfo")}>
         <FastForwardIcon />
       </IconButton>
     ),

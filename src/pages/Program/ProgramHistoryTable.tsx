@@ -5,7 +5,6 @@ import {
   TableBody,
   TableRow,
   TableCell,
-  Paper,
 } from "@mui/material";
 import { ProgramHistoryData } from "./ProgramHistoryData";
 

@@ -7,7 +7,6 @@ import {
   TableCell,
   Paper,
 } from "@mui/material";
-import { table } from "console";
 
 export default function MuiTable() {
   return (
