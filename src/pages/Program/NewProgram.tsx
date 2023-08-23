@@ -12,7 +12,7 @@ import { useState } from "react";
 import NewProgramSampleA from "./NewProgramSampleA";
 import NewProgramSampleB from "./NewProgramSampleB";
 import React from "react";
-import NewPorgramConfirmation from "./NewPorgramConfirmation";
+import NewPorgramConfirmation from "./PorgramConfirmation";
 import NewProgramSend from "./NewProgramSend";
 import { Copyright } from "../../components/Copyright";
 
