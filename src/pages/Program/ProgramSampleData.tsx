@@ -45,9 +45,14 @@ const SampleA = [
 ];
 
 export function SampleDataA() {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    const data = new FormData(event.currentTarget);
+    console.log(data);
+  };
+
   return (
     <React.Fragment>
-      <Grid container spacing={1}>
+      <Grid container spacing={1} component={"form"} onSubmit={handleSubmit}>
         {SampleA.map((el: any) => (
           <>
             <Grid item xs={12} sm={4}>

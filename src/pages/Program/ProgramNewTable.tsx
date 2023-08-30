@@ -7,12 +7,10 @@ import {
   TableCell,
 } from "@mui/material";
 import { ProgramNewListData } from "./ProgramNewListData";
-import { useNavigate } from "react-router-dom";
 
 //! Search, filter хийх.
 
 export default function ProgramNewTable() {
-  const navigate = useNavigate();
   return (
     <TableContainer>
       <Table size="small" aria-label="simple table" stickyHeader>

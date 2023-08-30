@@ -1,9 +1,7 @@
-import { Box, Button, Container, Grid, Paper, Toolbar } from "@mui/material";
+import { Box, Container, Grid, Paper, Toolbar } from "@mui/material";
 import ProgramNewTable from "./ProgramNewTable";
-import { useNavigate } from "react-router";
 
 export default function ProgramNewList() {
-  const navigate = useNavigate();
   return (
     <Box
       component="main"
@@ -22,13 +20,6 @@ export default function ProgramNewList() {
           <Grid item xs={12}>
             <Paper sx={{ p: 2, display: "flex", flexDirection: "column" }}>
               <ProgramNewTable />
-
-              <Button
-                variant="contained"
-                onClick={() => navigate("/NewProgramCheckinfo")}
-              >
-                NewProgramCheckinfo
-              </Button>
             </Paper>
           </Grid>
         </Grid>

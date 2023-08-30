@@ -1,5 +1,15 @@
-import { Alert, IconButton } from "@mui/material";
+import { IconButton } from "@mui/material";
 import FastForwardIcon from "@mui/icons-material/FastForward";
+import { useNavigate } from "react-router-dom";
+
+export function GoButton() {
+  const navigte = useNavigate();
+  return (
+    <IconButton onClick={() => navigte("/NewProgramCheckinfo")}>
+      <FastForwardIcon />
+    </IconButton>
+  );
+}
 
 export const ProgramNewListData = [
   {
@@ -11,11 +21,7 @@ export const ProgramNewListData = [
     EQAname:
       "miniMEQAS Гематологийн чанарын гадаад үнэлгээний 1-дэх удаагийн  хөтөлбөр",
     status: "Нээлттэй",
-    participate: (
-      <IconButton onClick={() => alert("NewProgramCheckinfo")}>
-        <FastForwardIcon />
-      </IconButton>
-    ),
+    participate: <GoButton />,
   },
   {
     id: 2,
@@ -26,11 +32,7 @@ export const ProgramNewListData = [
     EQAname:
       "miniMEQAS Гематологийн чанарын гадаад үнэлгээний 2-дах удаагийн  хөтөлбөр",
     status: "Хариу илгээсэн",
-    participate: (
-      <IconButton onClick={() => alert("NewProgramCheckinfo")}>
-        <FastForwardIcon />
-      </IconButton>
-    ),
+    participate: <GoButton />,
   },
   {
     id: 3,
@@ -41,10 +43,6 @@ export const ProgramNewListData = [
     EQAname:
       "miniMEQAS Гематологийн чанарын гадаад үнэлгээний 3-дах удаагийн  хөтөлбөр",
     status: "Нээлттэй",
-    participate: (
-      <IconButton onClick={() => alert("NewProgramCheckinfo")}>
-        <FastForwardIcon />
-      </IconButton>
-    ),
+    participate: <GoButton />,
   },
 ];

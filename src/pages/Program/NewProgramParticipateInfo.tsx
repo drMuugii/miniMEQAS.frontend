@@ -1,15 +1,10 @@
 import * as React from "react";
-import { Button, IconButton, Typography, TextField, Grid } from "@mui/material";
-import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
-import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
-import { DatePicker } from "@mui/x-date-pickers/DatePicker";
+import { Button, Grid } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-
 import ParticipateData from "./ParticipateData";
 
 export default function NewProgramParticipateInfo() {
   const navigate = useNavigate();
-
   return (
     <React.Fragment>
       <Grid container spacing={3}>

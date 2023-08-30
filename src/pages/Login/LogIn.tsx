@@ -12,18 +12,7 @@ import Typography from "@mui/material/Typography";
 import { Avatar } from "@mui/material";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import { useNavigate } from "react-router-dom";
-
-function Copyright(props: any) {
-  return (
-    <Typography variant="body2" color="text.secondary" align="center">
-      {"Copyright © "}
-      <Link color="inherit" href="http://localhost:3000/">
-        drMuuguu
-      </Link>{" "}
-      {new Date().getFullYear()}
-    </Typography>
-  );
-}
+import { Copyright } from "../../components/Copyright";
 
 export default function LogIn() {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
@@ -107,7 +96,6 @@ export default function LogIn() {
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
-              onClick={() => navigate("/home")}
             >
               Нэвтрэх
             </Button>
